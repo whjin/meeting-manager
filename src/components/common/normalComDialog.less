@@ -1,0 +1,144 @@
+@import "./common.less";
+/*普通弹窗样式*/
+.v-transfer-dom {
+  #app;
+  //查看详情样式
+  .objInfoModal {
+    line-height: 28px;
+    font-weight: normal;
+    height: 150px;
+    > .unToolTip {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      display: inline-block;
+      color: rgba(255, 255, 255, 1);
+      vertical-align: top;
+      height: 37px;
+      font-size: 16px;
+    }
+    > div {
+      width: 50%;
+      margin-bottom: 0.729vw;
+      .ivu-tooltip-rel {
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        color: rgba(255, 255, 255, 1);
+        font-size: 16px;
+      }
+    }
+  }
+  //普通弹窗
+  .ivu-modal-content {
+    background: url("../../assets/images/common/background.png") no-repeat;
+    border-radius: 0;
+    .ivu-modal-header {
+      padding: 20px;
+      border-bottom: 1px solid rgba(0, 122, 255, 1);
+      p {
+        height: 22px;
+        i,
+        span {
+          box-sizing: border-box;
+          width: 100%;
+          height: 60px;
+          font: bold 20px/22px Adobe Heiti Std R;
+          color: #35fffa;
+        }
+      }
+    }
+    .ivu-modal-close .ivu-icon-ios-close {
+      font-size: 42px;
+      top: 5px;
+      color: #ffffff;
+      left: -3px;
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+    .ivu-modal-body {
+      font: bold 14px/14px ArialMT;
+      padding: 40px 30px 0 30px;
+      color: rgba(255, 255, 255, 1);
+      .ivu-input {
+        color: #fff;
+      }
+      // 弹窗小标题
+      .v-transfer-title {
+        color: rgb(53, 255, 250);
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 22px;
+        display: inline-block;
+      }
+    }
+    .ivu-modal-footer {
+      border-top: none;
+      text-align: right;
+      padding: 40px 35px;
+      .ivu-btn-primary {
+        background: url("../../assets/images/common/searchButton.png") no-repeat;
+        background-size: 100% 100%;
+        border: 0 none;
+        width: 100px;
+        height: 50px;
+        font-size: 14px;
+        border-radius: 0;
+        color: #fff;
+      }
+    }
+  }
+  //弹窗按钮样式
+  .ivu-btn-primary {
+    //width:100px;
+    //height:40px;
+    font: 16px/16px Source Han Sans SC !important;
+    border-radius: 4px !important;
+    margin: 0 5px;
+  }
+  .cancelBtn {
+    border: 1px solid rgba(0, 122, 255, 1) !important;
+    background: rgba(0, 122, 255, 0.2) !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+  //.confirmBtn{
+  //  background:rgba(0,122,255,1) !important;
+  //  color: rgba(255,255,255,0.85) !important;
+  //}
+  .ivu-input {
+    height: 40px;
+    width: 220px;
+    background: transparent !important;
+    box-shadow: inset 0 0 8px #316e97;
+    border: 1px solid #316e97;
+    border-radius: 0;
+  }
+  .ivu-select-selection {
+    height: 40px;
+    width: 200px !important;
+    background: transparent;
+    box-shadow: inset 0 0 8px #316e97;
+    border: 1px solid #316e97;
+    border-radius: 0;
+  }
+  .cameraBox,
+  img {
+    border: 0 none;
+    //margin: 12px 5px 13px 18px;
+  }
+  .ivu-col-span-4 {
+    background: url("../../assets/images/common/bjPicture.png") no-repeat;
+    background-size: 100% 100%;
+    width: 205px;
+    height: 200px;
+    text-align: center;
+    margin: 0 20px;
+    span {
+      display: block;
+      text-align: center;
+      line-height: 34px;
+    }
+  }
+}

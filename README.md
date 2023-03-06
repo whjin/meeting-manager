@@ -1,2 +1,3 @@
-# meeting-manager
-meeting manager
+# meeting-manage
+
+management of meetings
